@@ -1,76 +1,78 @@
-VELoop Rewards – Wallet, Withdrawals & Analytics System
+# VELOOP Rewards
 
-Project Overview
+A rewards and wallet management demo application built to demonstrate user wallets, reward balances, transactions, withdrawals, and admin analytics.
 
-VELoop Rewards is a demo rewards management application designed to demonstrate user wallets, reward transactions, payout options, withdrawal requests, and administrative analytics.
-
-Live Application
+## Live Application
 
 https://veloop-rewards-fpii.onrender.com/
 
-GitHub Repository
+## GitHub Repository
 
-https://github.com/bindhusrigunji/veloop-rewards-wallet-system
+https://github.com/bindhusrigunji/veloop-wallet-system
 
-Main Features
+## Features
 
-User Dashboard
+- User login and dashboard
+- Wallet balance management
+- Spendable VEs and Staked SVEs
+- Gems, Tokens, and Spins
+- Transaction history
+- Withdrawal request workflow
+- Multiple payout options displayed
+- Admin dashboard and analytics
+- KPI reporting and CSV export
 
-- User dashboard with wallet balances.
-- Rewards and transaction history.
-- Payout options catalogue.
-- Withdrawal request and history pages.
+## Technology Stack
 
-Admin Console
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
+- Express
+- MongoDB / MongoDB Memory Server fallback
 
-- Analytics and KPI dashboard.
-- User and wallet management.
-- Payout option management.
-- Withdrawal review interface.
-- Read-only audit trail.
-- User and wallet integrity checks.
-- CSV export and analytics filters.
+## Demo Environment
 
-Technology
+**Data Origin:** SIMULATED_DEMO_DATA
 
-- Frontend: React
-- Backend: Node.js and Express
-- Database: MongoDB / Mongoose
-- Deployment: Render
+**Production Database:** NOT CONNECTED
 
-Testing Summary
+The current application uses seeded demo data and an embedded MongoDB Memory Server fallback. It is intended for demonstration and technical evaluation.
 
-The documented test execution report records:
+Actual production database and payment gateway integrations have not been completed or verified.
 
-- Total test cases: 23
-- Passed: 21
-- Failed: 0
+## Documentation
+
+| File | Description |
+|---|---|
+| TEST_EVIDENCE_REPORT.md | Test results and limitations |
+| KPI_Validation_Report.md | Validation status of 46 KPIs |
+| Analytics_Specification.md | Analytics features and limitations |
+| ER_Diagram_Report.md | Main entities and relationships |
+| PRODUCTION_ROADMAP.md | Pending production requirements |
+
+## Test Summary
+
+- Primary test suite: 21 PASS
+- Failed tests: 0
 - Not testable: 2
+- Security checks: 6 PASS
+- KPI checks: 6 PASS
+- TypeScript lint: PASS
+- Vite production build: PASS
+- Browser E2E: Not executed
 
-The two not-testable cases depend on unavailable external integrations and production database access.
+## Production Roadmap
 
-Documentation
+Production readiness requires:
 
-- Database_design.md
-- Api_documentation.md
-- Test_cases.md
-- Test_Execution_Report.md
-- ER_Relationship_Validation.md
-- KPI_Validation_Report.md
-- Analytics_Specification.md
-- Production_Integration_Roadmap.md
+1. Production database configuration
+2. Actual payment gateway integration
+3. Referral tracking implementation
+4. KPI business confirmation
+5. Browser end-to-end testing
+6. Production security verification
 
-Data and Production Limitations
+## Project Status
 
-- The deployed application uses simulated demo data.
-- The active database engine is embedded MongoDB.
-- The VELOOP production database is not connected.
-- Real payment gateway and payout settlement integrations are not connected.
-- KPI definitions requiring business confirmation are pending.
-- Production integration steps are documented in the roadmap and are not claimed as completed.
-
-Project Status
-
-The demo application and its documented test baseline are available for final review. Production integration and stakeholder validation remain pending.
-
-Note: Demo records and simulated transactions must not be interpreted as actual VELOOP production records or completed real-money payouts.
+This repository contains a deployed demo application and supporting technical documentation. Production integrations and final business validation remain pending.
