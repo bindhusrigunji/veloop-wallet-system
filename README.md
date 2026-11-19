@@ -10,7 +10,7 @@ https://veloop-rewards-fpii.onrender.com/
 
 GitHub Repository
 
-https://github.com/bindhusrigunji/veloop-rewards-prograss
+https://github.com/bindhusrigunji/veloop-rewards-wallet-system
 
 Main Features
 
